@@ -1,5 +1,8 @@
 import { v2 as cloudinary } from "cloudinary";
 import Post from "../mongodb/models/post.js";
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
